@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Sender"
+    android:background="#ffff855b"
+    android:id="@+id/one">
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="SendViaBluetooth"
+        android:src="@drawable/bluetooth"
+        android:background="#ff000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:hint="Enter Distance"
+
+        android:textStyle="bold"
+        android:background="#ff7a59b4"
+        android:textColor="#ff1eaeff"
+        android:textSize="20dp"
+        android:textIsSelectable="true"
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/Button"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/time"
+
+        android:hint="Capture Time"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#ffb0b45c"
+        android:textColor="#ffb7ffdb"
+        android:layout_below="@+id/textlan"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="99dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:text="Enter Distance :"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="lATITUDE"
+        android:id="@+id/textView"
+        android:textColorLink="#ffeffff8"
+        android:layout_below="@+id/textlog"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Text lat"
+        android:id="@+id/textlan"
+        android:textColorLink="#ffeffff8"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/textlog"
+        android:layout_alignStart="@+id/textlog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="LONGITUDE"
+        android:id="@+id/textView3"
+        android:textIsSelectable="false"
+        android:textColorLink="#ffeffff8"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textlog"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/time"
+        android:layout_alignEnd="@+id/time" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click After Action To Save"
+        android:id="@+id/button3"
+        android:layout_below="@+id/textlan"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+
+        android:id="@+id/capture"
+        android:text=" "
+        android:onClick="SendCapture"
+
+
+        android:layout_alignTop="@+id/Button"
+        android:background="#ffff855b"
+        android:layout_toLeftOf="@+id/editText1"
+        android:layout_toStartOf="@+id/editText1" />
+
+
+</RelativeLayout>
+
+
+

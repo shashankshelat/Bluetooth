@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_rssi"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="detecting devices"
+        android:id="@+id/button" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.60" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="Save on Click"
+        android:id="@+id/save" />
+
+</LinearLayout>
